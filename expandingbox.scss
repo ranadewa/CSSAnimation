@@ -1,0 +1,27 @@
+body {
+    background: #333333;
+}
+
+$width: 1000px;
+
+.box {
+    background: white;
+    left: 100px;
+    width: 1000px;
+    height: 200px;
+    position: relative;
+    animation-name: myAnim;
+    animation-duration: .25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes myAnim {
+    from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+}
